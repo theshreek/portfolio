@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+nav{
+    display:flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+nav .logo{
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(78, 77, 76);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-links ul li:hover a{
+    color: black;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background: #199c40;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 60%;
+}
+.header-social-links a{
+    font-size: medium;
+    text-decoration: none;
+    color: rgb(78, 77, 76);
+}
+.fab{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+img{
+    width: 100%;
+
+}
+.jumbo{
+    text-align: center;
+    width: 100%;
+    height: 110vh;
+    vertical-align: center;
+    padding: 17em 0;
+    background-image: url(image/focused.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.btn-about{
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #34b7a7;
+    border: 0px;
+}
+.btn-about:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+footer{
+    height: 65px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+/*---------about-----*/
+.about{
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    padding: 100px 100px;    
+}
+/*------img-----*/
+.row{
+    margin: 0 35px;
+}
