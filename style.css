@@ -111,6 +111,7 @@ footer{
 }
 
 /*---------about-----*/
+
 .about p{
     font-size: large;
 }
@@ -143,4 +144,8 @@ footer{
         cursor: pointer;
     }
 
+}
+.abouttext{
+    border-bottom:3px solid #199c40;
+    
 }
