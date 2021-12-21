@@ -19,7 +19,7 @@
     <nav>
         <a href="index.html" class="logo">SHREEK</a>
         <div class="nav-links">
-            <i class="fa fa-times"></i>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -57,7 +57,7 @@
     
                 </a>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="about">
         <h1>ABOUT</h1>
@@ -71,6 +71,16 @@
         <p>Frontend Developer</p>
     </div>
     </div>
+    <!------javascript for toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
     
     <footer><p>&copy; copyright <b>shreek</b>. All rights reserved</p></footer>
 </body>
