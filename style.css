@@ -97,6 +97,7 @@ img{
     color: #fff;
     background: #34b7a7;
     border: 0px;
+    text-decoration: none;
 }
 .btn-about:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
