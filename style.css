@@ -117,3 +117,6 @@ footer{
 .row{
     margin: 0 35px;
 }
+@media(max-width: 700px){
+    
+}
