@@ -147,5 +147,7 @@ footer{
 }
 .abouttext{
     border-bottom:3px solid #199c40;
-    
+}
+.resume{
+    border-left: 4px solid #199c40;
 }

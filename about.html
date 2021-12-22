@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shreek</title>
+    <link rel="icon" href="image/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,19 +69,15 @@
             <h1>
                 <span class="abouttext">ABOUT</span>
             </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ullam ducimus vel vitae autem
-                repellendus repellat. Suscipit sapiente veritatis placeat ipsa rerum ad officiis, dicta excepturi?
-                Suscipit blanditiis eaque accusamus.</p>
+            <p><b>HELLO!</b> Thanks For Visiting My Website! As I'm sure you are aware, considering you're on a Website called <b>shree.info.np</b>, My name is Shree Kishna Thapa Magar. I am 23 years old. </p>
         </div>
         <div class="row mt-5">
             <div class="col-sm-4">
                 <img src="image/img.png" class="mb-4">
             </div>
             <div class="col-sm-8">
-                <h1><strong>Frontend Developer</strong></h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla minus aut reprehenderit! Officiis
-                    reprehenderit rem nostrum. Velit, nisi excepturi accusamus corporis dolores rem! Reiciendis saepe
-                    eum hic, cupiditate vero sit?</p>
+                <h1><strong>Beginner Frontend Developer</strong></h1>
+                <p>I am a self-taught Beginner Front End Developer based on Nepal. I primarily focus on writing clean, elegant, and efficient code. I am Intermediate in HTML, CSS, Javascript and WordPress. I describe myself as a passionate developer. Turn design pages and specific components into HTML, CSS and JavaScript. Analyzed UI/UX design for responsive layout for improved usability.</p>
                 <div class="row">
                     <div class="col-sm-5">
                         <p><b>Birthday:</b> 22 Nov 1998</p>
@@ -95,8 +92,7 @@
                         <p><b>Freelance:</b> Available</p>
                     </div>
                 </div>
-                <p>Molestiae quo veritatis nisi quod? Vitae adipisci officia, nulla accusamus molestias doloribus
-                    labore? Natus ad maiores velit officia, impedit sit deleniti nisi?</p>
+                <p>In my free time you can find me at the Narayani River side or around Gaindakot.</p>
             </div>
         </div>
     </div>
@@ -106,8 +102,7 @@
             <h1>
                 <span class="abouttext">SKILLS</span>
             </h1>
-            <p>Iusto unde obcaecati provident nostrum veniam possimus, quia ipsam eligendi quam quis soluta a suscipit
-                minus mollitia, molestias perspiciatis. Officiis, omnis veritatis.</p>
+            <p>Problem-solving, Creativity, Adaptability, Attention to detail,Patience</p>
         </div>
         <div class="row">
             <div class="col-sm-6">
@@ -148,7 +143,7 @@
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col-sm-6">
-                        <p>PHP</p>
+                        <p>BOOTSTRAP</p>
                     </div>
                     <div class="col-sm-6 text-end">
                         <p>20%</p>
@@ -173,11 +168,11 @@
                         <p>PHOTOSHOP</p>
                     </div>
                     <div class="col-sm-6 text-end">
-                        <p>75%</p>
+                        <p>70%</p>
                     </div>
                 </div>
                 <div class="progress mb-4">
-                    <div class="progress-bar" style="width:75%"></div>
+                    <div class="progress-bar" style="width:70%"></div>
                 </div>
             </div>
         </div>
@@ -186,10 +181,10 @@
         <h1>
             <span class="abouttext">FACTS</span>
         </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla minus aut reprehenderit! Officiis
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla minus aut reprehenderit! Officiis
             reprehenderit rem nostrum. Velit, nisi excepturi accusamus corporis dolores rem! Reiciendis saepe
             eum hic, cupiditate vero sit?
-            </p>
+        </p>
     </div>
     <!------javascript for toggle Menu-------->
     <script>
@@ -201,6 +196,18 @@
 
         function hideMenu() {
             navLinks.style.right = "-200px";
+        }
+
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+            console.log(getAge(1998 - 11 - 22))
         }
     </script>
 
