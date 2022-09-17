@@ -68,7 +68,7 @@ nav .logo{
     padding-right: 4px;
     padding-left: 4px;
 }
-img{
+img.profile{
     width: 100%;
     border-radius: 40%;
     border-style: solid;
