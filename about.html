@@ -72,17 +72,17 @@
                 <img src="./image/Theshreek.jpg" class="mb-4 profile">
             </div>
             <div class="col-lg-9 col-sm-6">
-                <h1><strong>Frontend Developer</strong></h1>
-                <p>I am a self-taught Beginner Front End Developer based on Nepal. I primarily focus on writing clean, elegant, and efficient code. I am intermediate in HTML, CSS, Javascript and WordPress. I describe myself as a passionate developer. Turn design pages and specific components into HTML, CSS and Javascript. Analyzed UI/UX design for responsive layout for improved usability.</p>
+                <h1><strong>JAVA Developer</strong></h1>
+                <!-- <p>I am a self-taught Beginner Front End Developer based on Nepal. I primarily focus on writing clean, elegant, and efficient code. I am intermediate in HTML, CSS, Javascript and WordPress. I describe myself as a passionate developer. Turn design pages and specific components into HTML, CSS and Javascript. Analyzed UI/UX design for responsive layout for improved usability.</p> -->
                 <div class="row">
                     <div class="col-sm-5">
-                        <p><b>Birthday:</b> 22 Nov 1998</p>
+                        <p id="birthdate"><b>Birthday:</b> 22 Nov 1998</p>
                         <p><b>Website:</b> shree.info.np</p>
                         <p><b>Phone:</b> +977 9845881937</p>
                         <p><b>City:</b> Kathmandu</p>
                     </div>
                     <div class="col-sm-7">
-                        <p><b>Age:</b> 23</p>
+                        <p id="age"><b>Age:</b> 23</p>
                         <p><b>Degree:</b> Bachelor</p>
                         <p><b>Email:</b> iamtheshreek@gmail.com</p>
                         <p><b>Freelance:</b><sub> **************</sub></p>
@@ -128,8 +128,9 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
-
-        function getAge(dateString) {
+        var age=document.getElementById('age')
+        var birthdate=document.getElementById('birthdate')
+        function getAge(birthdate) {
             var today = new Date();
             var birthDate = new Date(dateString);
             var age = today.getFullYear() - birthDate.getFullYear();
